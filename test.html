@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fat Alien</title>
+    <link rel="stylesheet" href="style/style.css">
+</head>
+<body>
+    <div class="wraper">
+        <section class="first-section">
+            <div id="date-block"></div>
+        </section>
+
+        <section class="main-section"> <!-- это page1 -->
+            <button class="calculator__button calculator__button--add button" id="nameAdd" type="button">Добавить</button>
+            <input type="text" class="calculator__input calculator__input--name" id="nameProdukt" placeholder="Продукт" required>
+            <input type="number" class="protein calculator__input calculator__input--protein" id="protein" placeholder="Введите белки">
+            <input type="number" class="carbs calculator__input calculator__input--carbs" id="carbs" placeholder="Введите углеводы">
+            <input type="number" class="fats calculator__input calculator__input--fats" id="fats" placeholder="Введите жиры">
+            <div class="calculator__total">Общее количество калорий:</div>
+            <button class="calculator__button calculator__button--save button" id="saveButton">Сохранить продукт</button>
+            <div class="calculator__result" id="totalMyCcal"></div>
+            <div class="saved-product" id="saved-product"></div>
+        </section>
+    </div>
+
+    <script src="updateDate.js"></script>
+    <script src="app.js"></script>
+</body>
+</html>

@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="ru">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>Fat Alien</title>
+		<link rel="stylesheet" href="style/style.css">
+		<script src="https://cdn.jsdelivr.net/npm/chart.js"></script> <!-- Подключение Chart.js -->
+  </head>
+<body>
+    <div class="wraper">
+		<header class="header">
+			<section class="first-section">
+            <div id="date-block"></div>
+        </section>
+
+
+	  </header>
+
+
+	  
+	  <section class="calories">
+		<div class="calories__total">
+			 <span class="calories__label">Всего калорий:</span>
+			 <span class="calories__value" id="totalCcal">0 kkal</span>
+		</div>
+		<div class="calories__percentage">
+			 <span class="calories__label">от моей нормы:</span>
+			 <span class="calories__value" id="caloriesPercentage">%</span>
+		</div>
+  </section>
+
+
+
+
+
+  <section class="proteinFatsCabs">
+	<div class="container">
+	  <!-- Белки -->
+		<div class="protein">
+	  <div class="container-progress-bar">
+	  <div class="container__text">Белки</div>
+	  <div class="progress-bar">
+		 <div class="progress-bar__line" id="progress-bar-proteins"></div>
+	  </div>
+	  <div class="container__output" id="output-proteins">0%</div>
+	</div>
+	</div>
+
+ 
+	  <!-- Жиры -->
+		<div class="fats">
+	  <div class="container-progress-bar">
+	  <div class="container__text">Жиры</div>
+	  <div class="progress-bar">
+		 <div class="progress-bar__line" id="progress-bar-fats"></div>
+	  </div>
+	  <div class="container__output" id="output-fats">0%</div>
+	</div>
+	</div>
+ 
+	  <!-- Углеводы -->
+		<div class="cabs">
+	  <div class="container-progress-bar">
+	  <div class="container__text">Углеводы</div>
+	  <div class="progress-bar">
+		 <div class="progress-bar__line" id="progress-bar-carbs"></div>
+	  </div>
+	  <div class="container__output" id="output-carbs">0%</div>
+	</div>
+	</div>
+	</div>
+ </section>
+
+
+
+
+ <section class="notebook">
+	<div class="notebook__header">
+		<div class="search-container">
+			 <input type="text" id="searchInput" class="search-input" placeholder="Добавить блюдо">
+			 <button class="search-button" id="searchBtn">Найти</button>
+		</div>
+  </div>
+  
+  <div id="searchResults"></div>
+  
+	</div>
+ </section>
+
+ <div class="lines-container">
+	<!-- Блок с 20 линиями -->
+	<hr>
+	<hr>
+	<hr>
+	<hr>
+	<hr>
+	<hr>
+	<hr>
+	<hr>
+	<hr>
+	<hr>
+	<hr>
+	<hr>
+	<hr>
+	<hr>
+	<hr>
+	<hr>
+	<hr>
+	<hr>
+	<hr>
+	<hr>
+</div>
+
+ 
+ 
+
+
+
+<footer class="footer">
+	<div class="footer__buttons">
+		<a class="footer__button" id="calendarLink" href="calendar.html">
+			<img src="img/calendar.jpg" alt="Календарь">
+		</a>
+		<a class="footer__button" id="homeLink" href="home.html">
+			<img src="img/home.png" alt="Главная">
+		</a>
+		<a class="footer__button" id="settingsLink" href="settings.html">
+			<img src="img/setings.jpg" alt="Настройки">
+		</a>
+	</div>
+</footer>
+
+
+
+
+
+    </div>
+
+	 <script src="updateDate.js"></script>
+    <script src="app.js"></script>
+	 <script src="notes.js"></script>
+</body>
+</html>

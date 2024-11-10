@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="ru">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>Fat Alien</title>
+		<link rel="stylesheet" href="style/style.css">
+		<link rel="stylesheet" href="style/setings.css">
+		<script src="https://cdn.jsdelivr.net/npm/chart.js"></script> <!-- Подключение Chart.js -->
+  </head>
+<body>
+	<div class="wraper">
+		<header class="header">
+			<section class="first-section">
+            <div id="date-block"></div>
+        </section>
+
+
+	  </header>
+
+
+
+
+	   <main>
+
+
+			<section>
+				<div class="result-block">
+					<h2>Результат</h2>
+			  
+					<!-- Норма калорий -->
+					<div class="calories-norm">
+						 <span>Норма калорий:</span>
+						 <div class="kcalOutput" id="kcalOutput">0</div> <!-- Это будет поле для вывода -->
+					</div>
+			  
+					<!-- Соотношение нутриентов -->
+					<h2>Соотношение нутриентов</h2>
+			  
+					<!-- Блок с тремя полями для ввода (белки, жиры и углеводы) -->
+					<div class="nutrients-inputs">
+						 <div>
+							  <label for="proteinInput">Белки</label>
+							  <input type="number" id="proteinInput" placeholder="г" oninput="calculateTotalCalories()" />
+						 </div>
+						 <div>
+							  <label for="fatsInput">Жиры</label>
+							  <input type="number" id="fatsInput" placeholder="г" oninput="calculateTotalCalories()" />
+						 </div>
+						 <div>
+							  <label for="carbsInput">Углеводы</label>
+							  <input type="number" id="carbsInput" placeholder="г" oninput="calculateTotalCalories()" />
+						 </div>
+					</div>
+					<div class="button">
+						<button onclick="saveToLocalStorage()">Сохранить</button>
+				  </div>
+			  </div>
+			  
+			  
+
+
+
+			</section>
+
+
+
+		</main>
+
+<footer class="footer">
+	<div class="footer__buttons">
+		<a class="footer__button" id="calendarLink" href="calendar.html">
+			<img src="img/calendar.jpg" alt="Календарь">
+		</a>
+		<a class="footer__button" id="homeLink" href="home.html">
+			<img src="img/home.png" alt="Главная">
+		</a>
+		<a class="footer__button" id="settingsLink" href="settings.html">
+			<img src="img/setings.jpg" alt="Настройки">
+		</a>
+	</div>
+</footer>
+
+
+
+
+
+    </div>
+	 <script src="settings.js"></script>
+</body>
+	
+</body>
+</html>
